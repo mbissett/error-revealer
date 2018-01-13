@@ -32,6 +32,9 @@ When this is the case, this plugin is your friend. :)
  
  - Now, take the steps to reproduce the error. Error Revealer will write entries to `/wp-content/debug.log` as information is available.
  
+
+**IMPORTANT**: *Remember to remove this plugin after debugging the error!* Leaving it in the /mu-plugins folder on your site will have a negative impact on your site's performance.
+ 
 ## History
 
 The original plugin, wp-no-white-screen, was meant to help reveal errors on the WSOD (White Screen of Death) page that can sometimes occur when using WordPress.
@@ -46,5 +49,3 @@ In this fork, I've hidden the output from the frontend (whereas wp-no-white-scre
 
  * [The WordPress Codex](http://codex.wordpress.org/Debugging_in_WordPress)
  * [Other Cool Options](http://nacin.com/2010/04/23/5-ways-to-debug-wordpress/)
-
-**IMPORTANT** *Remember to remove this file again after debugging the error!* Leaving it will cost your server valuable performance.
