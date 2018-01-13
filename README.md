@@ -11,7 +11,7 @@ When this is the case, this plugin is your friend. :)
  - Download Error Revealer here: https://github.com/mbissett/error-revealer/archive/master.zip - and unzip the contents of the .zip file to a easy to find folder on your computer.
  - Using your FTP client (or your host's file manager), take the following steps:
 
-   - Open the `/mu-plugins` folder in the `/wp-content` folder for your WordPress site (the `/wp-content` folder is usually in your `/public_html` folder). If the `/mu-plugins` folder does not exist yet, please create it & then open it.
+   - Open the `/mu-plugins` folder in the `/wp-content` folder for your WordPress installation (the `/wp-content` folder is usually in your `/public_html` folder). If the `/mu-plugins` folder does not exist yet, please create it & then open it.
 
    - Upload `error-revealer.php` to the `/wp-content/mu-plugins` folder. 
 
