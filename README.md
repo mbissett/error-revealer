@@ -20,13 +20,12 @@ When this is the case, this plugin is your friend. :)
     <pre>// Enable WordPress's debug mode
    define('WP_DEBUG', true);
 
-    // Necessary for writing errors to /wp-content/debug.log
-    define('WP_DEBUG_LOG', true);
+   // Necessary for writing errors to /wp-content/debug.log
+   define('WP_DEBUG_LOG', true);
 
-    // Hide errors on the front end
-    define('WP_DEBUG_DISPLAY', false);
-    @ini_set('display_errors', 0);
-    </pre>
+   // Hide errors on the front end
+   define('WP_DEBUG_DISPLAY', false);
+   @ini_set('display_errors', 0);</pre>
     _NOTE: Insert these lines **above** the /* That's all, stop editing! Happy blogging. */ line in your wp-config.php file!_</li>
   </ul>
  
