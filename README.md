@@ -16,19 +16,19 @@ When this is the case, this plugin is your friend. :)
     <li>Upload `error-revealer.php` to the `/wp-content/mu-plugins` folder.</li>
 
     <li>Open the `wp-config.php` file in the root folder for your WordPress installation, and add the lines below to this file (if these lines are already present, there is no need to add them again):
-<br>
-<div style="margin: 0 40px;"><pre>
-// Enable WordPress's debug mode
-define('WP_DEBUG', true);
+    <br><br>    
+    <div style="margin: 0 40px;"><pre>
+    // Enable WordPress's debug mode
+    define('WP_DEBUG', true);
 
-// Necessary for writing errors to /wp-content/debug.log
-define('WP_DEBUG_LOG', true);
+    // Necessary for writing errors to /wp-content/debug.log
+    define('WP_DEBUG_LOG', true);
 
-// Hide errors on the front end
-define('WP_DEBUG_DISPLAY', false);
-@ini_set('display_errors', 0);
-</pre></div>
-_NOTE: Insert these lines **above** the /* That's all, stop editing! Happy blogging. */ line in your wp-config.php file!_</li>
+    // Hide errors on the front end
+    define('WP_DEBUG_DISPLAY', false);
+    @ini_set('display_errors', 0);
+    </pre></div>
+    _NOTE: Insert these lines **above** the /* That's all, stop editing! Happy blogging. */ line in your wp-config.php file!_</li>
   </ul>
  
  - Now, take the steps to reproduce the error. Error Revealer will write entries to `/wp-content/debug.log` as information is available.
