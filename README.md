@@ -16,7 +16,9 @@ When this is the case, this plugin is your friend. :)
     <li>Upload `error-revealer.php` to the `/wp-content/mu-plugins` folder.</li>
 
     <li>Open the `wp-config.php` file in the root folder for your WordPress installation, and add the lines below to this file (if these lines are already present, there is no need to add them again):
+     
      &nbsp;
+     
     <pre>// Enable WordPress's debug mode
    define('WP_DEBUG', true);
 
