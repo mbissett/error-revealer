@@ -10,13 +10,13 @@ When this is the case, this plugin is your friend. :)
 
  - Download Error Revealer here: https://github.com/mbissett/error-revealer/archive/master.zip - and unzip the contents of the .zip file to a easy to find folder on your computer.
  - Using your FTP client (or your host's file manager), take the following steps:
+   <ul>
+    <li>Open the `/mu-plugins` folder in the `/wp-content` folder for your WordPress installation (the `/wp-content` folder is usually in your `/public_html` folder). If the `/mu-plugins` folder does not exist yet, please create it & then open it.</li>
 
-   - Open the `/mu-plugins` folder in the `/wp-content` folder for your WordPress installation (the `/wp-content` folder is usually in your `/public_html` folder). If the `/mu-plugins` folder does not exist yet, please create it & then open it.
+    <li>Upload `error-revealer.php` to the `/wp-content/mu-plugins` folder.</li>
 
-   - Upload `error-revealer.php` to the `/wp-content/mu-plugins` folder. 
-
-   - Open the `wp-config.php` file in the root folder for your WordPress installation, and add the lines below to this file (if these lines are already present, there is no need to add them again):
-
+    <li>Open the `wp-config.php` file in the root folder for your WordPress installation, and add the lines below to this file (if these lines are already present, there is no need to add them again):
+<br>
 <div style="margin: 0 40px;"><pre>
 // Enable WordPress's debug mode
 define('WP_DEBUG', true);
@@ -28,7 +28,8 @@ define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', false);
 @ini_set('display_errors', 0);
 </pre></div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _NOTE: Insert these lines **above** the /* That's all, stop editing! Happy blogging. */ line in your wp-config.php file!_
+_NOTE: Insert these lines **above** the /* That's all, stop editing! Happy blogging. */ line in your wp-config.php file!_</li>
+  </ul>
  
  - Now, take the steps to reproduce the error. Error Revealer will write entries to `/wp-content/debug.log` as information is available.
  
